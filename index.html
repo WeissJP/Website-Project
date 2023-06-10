@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arcadia Valley Ranch</title>
+        <link href="images/logo-icon.jpg" type="image/x-icon" rel="icon"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script>
+            function menuClick() {
+                var navbar = document.getElementById("nav-bar");
+                var responsive_class_name = "responsive"
+                navbar.classList.toggle(responsive_class_name)
+            }
+        </script>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+            </a>
+            <nav class="top-nav" id="nav-bar">
+                <ul>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="ranch.html">The Ranch</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" onclick="menuClick()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <main>
+            <div class="mainheading bottom-border">
+                <h1>Arcadia Valley Ranch</h1>
+                <p>Western Adventure Outfitters</p>
+            </div>
+            <section class="intro">
+                <h2>Western Hunts and Excursions</h2>
+                <p>Come experience your dream expedition in the American West here at Arcadia Valley Ranch. Nestled in the picturesque Jackson Hole Valley of western Wyoming, we offer guided hunts, horseback riding, fishing, and hiking. In addition to the ranch property, Arcadia Valley Ranch borders the Bridger-Teton National Forest, allowing access to thousands of acres of land. Our accommodations include the main ranch house or one of several single family cabins. Family vacations, solo trips, or even honeymoons, you can find it here at Arcadia Valley Ranch&excl;</p>
+            </section>
+            <section id="about">
+                <div id="about-container">
+                    <div class="link-container">
+                        <a href="about_ranch/testimonials.html">
+                            <h3 class="text-overlay">Testimonials</h3>
+                            <img src="images/campfire.jpg" class="linkpics" alt="campfire"/>
+                        </a>
+                    </div>
+                    <div class="link-container">
+                        <a href="about_ranch/location.html">
+                            <h3 class="text-overlay">Location</h3>
+                            <img src="images/ranch-location.jpg" class="linkpics" alt="ranch fence"/>
+                        </a>
+                    </div>
+                    <div class="link-container">
+                        <a href="about_ranch/wildlife.html">
+                            <h3 class="text-overlay">Wildlife</h3>
+                            <img src="images/elk.jpg" class="linkpics" alt="elk"/>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom-logo">
+                <a href="index.html">
+                    <img src="images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+                </a>
+            </div>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="ranch.html">The Ranch</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2021 Joe Weiss &vert; Principles of Web Media</p>
+        </footer>
+    </body>
+</html>

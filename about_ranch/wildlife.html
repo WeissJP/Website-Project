@@ -1,0 +1,117 @@
+<!-- This page will be accessible from both the home page and "The Ranch" -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wildlife &vert; Arcadia Valley Ranch</title>
+        <link href="../images/logo-icon.jpg" type="image/x-icon" rel="icon"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script>
+            function menuClick() {
+                var navbar = document.getElementById("nav-bar");
+                var responsive_class_name = "responsive"
+                navbar.classList.toggle(responsive_class_name)
+            }
+        </script>
+        <header>
+            <a href="../index.html" class="logo">
+                <img src="../images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+            </a>
+            <nav class="top-nav" id="nav-bar">
+                <ul>
+                    <li><a href="../adventures.html">Adventures</a></li>
+                    <li><a href="../ranch.html">The Ranch</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" onclick="menuClick()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <main>
+            <div class="mainheading bottom-border">
+                <h1>Wildlife</h1>
+            </div>
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="../about_ranch/location.html">Location</a></li>
+                    <li><a href="../about_ranch/wildlife.html">Wildlife</a></li>
+                    <li><a href="../about_ranch/testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="tiles">
+                <h2>Wyoming Locals</h2>
+                <p>Check out this list of some of the animals you may see during your stay at Arcadia Valley Ranch&excl; Of course, pets are welcome (though we don't recommend letting them play with the bears). As always with wild animals, keep a safe distance at all times and never try to feed them.</p>
+                <div class="image-gallery">
+                    <figure>
+                        <img src="../images/american-kestrel.jpg" alt="American Kestrel" title="American Kestrel"/>
+                        <figcaption>American Kestrel</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/bald-eagle.jpg" alt="Bald Eagle" title="Bald Eagle"/>
+                        <figcaption>Bald Eagle</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/bison.jpg" alt="American Bison" title="American Bison"/>
+                        <figcaption>American Bison</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/black-bear.jpg" alt="Black Bear" title="Black Bear"/>
+                        <figcaption>Black Bear</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/elk-stag.jpg" alt="Elk" title="Elk"/>
+                        <figcaption>Elk</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/grizzly-bear.jpg" alt="Grizzly Bear" title="Grizzly Bear"/>
+                        <figcaption>Grizzly Bear</figcaption>
+                    </figure>    
+                    <figure>
+                        <img src="../images/moose.jpg" alt="Moose" title="Moose"/>
+                        <figcaption>Moose</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/mule-deer.jpg" alt="Mule Deer" title="Mule Deer"/>
+                        <figcaption>Mule Deer</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/osprey.jpg" alt="Osprey" title="Osprey"/>
+                        <figcaption>Osprey</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/pronghorn.jpg" alt="Pronghorn" title="Pronghorn"/>
+                        <figcaption>Pronghorn</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/wolf.jpg" alt="Wolf" title="Wolf"/>
+                        <figcaption>Wolf</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/yellow-bellied-marmot.jpg" alt="Yellow-bellied Marmot" title="Yellow-bellied Marmot"/>
+                        <figcaption>Yellow-bellied Marmot</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="bottom-logo">
+                <a href="index.html">
+                    <img src="../images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+                </a>
+            </div>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="../adventures.html">Adventures</a></li>
+                    <li><a href="../ranch.html">The Ranch</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2021 Joe Weiss &vert; Principles of Web Media</p>
+        </footer>
+    </body>
+</html>

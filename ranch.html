@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Ranch &vert; Arcadia Valley Ranch</title>
+        <link href="images/logo-icon.jpg" type="image/x-icon" rel="icon"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"/> -->
+    </head>
+    <body>
+        <script>
+            function menuClick() {
+                var navbar = document.getElementById("nav-bar");
+                var responsive_class_name = "responsive"
+                navbar.classList.toggle(responsive_class_name)
+            }
+        </script>
+        <script>
+            var slideIndex = 0;
+            carousel();
+
+            function carousel() {
+            var i;
+            var x = document.getElementsByClassName("lodge-images");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <header>
+            <a href="index.html" class="logo">
+                <img src="images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+            </a>
+            <nav class="top-nav" id="nav-bar">
+                <ul>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="ranch.html">The Ranch</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a class="menu-icon" onclick="menuClick()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+        <main>
+            <div class="mainheading bottom-border">
+                <h1>The Ranch</h1>
+            </div>
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="about_ranch/location.html">Location</a></li>
+                    <li><a href="about_ranch/wildlife.html">Wildlife</a></li>
+                    <li><a href="about_ranch/testimonials.html">Testimonials</a></li>
+                </ul>
+            </nav>
+            <section class="about-ranch">
+                <h1>Our History</h1>
+                <p>Welcome to Arcadia Valley Ranch &mdash; the finest dude ranch in Wyoming. Since the turn of the 20<sup>th</sup> century, the Weiss family has settled and worked this land at the foot of the Grand Tetons. In 1955, we decided to open our doors for guests to stay with us and experience life on a bon-a-fide western ranch.</p>
+                <p>This continues today throughout all four seasons, providing a place for our guests to escape the hustle and bustle of 21<sup>st</sup> century life. Available accommodations include 15 cabins and a small campground for those wanting to get closer to nature. The main ranch house contains a dining area, recreation room with pool and poker tables, and a great room.</p>
+            </section>
+            <div id="lodge-image-container"> <!-- These images are 500x333 pixels. -->
+                <img class="lodge-images" src="images/ranch-lodge.jpg" alt="Ranch Lodge" title="Main Ranch Lodge"/>
+                <img class="lodge-images" src="images/ranch-great-room.jpg" alt="Lodge Great Room" title="Lodge Great Room"/>
+            </div>
+        </main>
+        <footer>
+            <div class="bottom-logo">
+                <a href="index.html">
+                    <img src="images/arcadia-logo.png" alt="Arcadia Valley Ranch" title="Home"/>
+                </a>
+            </div>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="adventures.html">Adventures</a></li>
+                    <li><a href="ranch.html">The Ranch</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2021 Joe Weiss &vert; Principles of Web Media</p>
+        </footer>
+    </body>
+</html>

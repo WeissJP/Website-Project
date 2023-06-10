@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+body {
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image: url(grand-tetons.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: center;
+    overflow-y: scroll;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.top-nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 0px;
+}
+.top-nav ul li {
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    margin: 10px 30px 10px 30px;
+}
+.top-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+.top-nav ul li a:hover {
+    color: #f89900;
+}
+.menu-icon {
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 619px) {
+    .menu-icon {
+        display: block;
+        font-size: x-large;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .top-nav ul {
+        display: none;
+    }
+    .top-nav.responsive ul {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+main {
+    margin: 25px;
+    background-color: rgba(1, 50, 32, 0.5);
+}
+.mainheading {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size:xx-large;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.mainheading p {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+.bottom-border {
+    border-bottom: 2px solid #000;
+}
+.intro {
+    color: rgb(245, 245, 245);
+    width: 50%;
+    transform: translate(50%, 0);
+    text-align: center;
+    font-size: large;
+    font-family: 'Merriweather', serif;
+    
+}
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#about-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.link-container {
+    position: relative;
+    margin: 5px 50px 5px 50px;
+}
+.text-overlay {
+    font-size: x-large;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0;
+    padding: 40px 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.linkpics {
+    border: 1px solid #fff;
+    box-sizing: content-box;
+    display: block;
+}
+.link-container:hover {
+    opacity: .75;
+}
+.link-container:hover .text-overlay {
+    opacity: 1;
+}
+footer {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
+    background-color: rgba(15, 15, 15, .85);
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+.bottom-nav {
+    padding-inline-start: 0px;
+    padding-bottom: 5px;
+}
+.bottom-nav ul {
+    padding-inline-start: 0px;
+}
+.bottom-nav ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bottom-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    list-style-type: none;
+}
+.bottom-nav ul li a:hover {
+    color: #f89900;
+}
+
+/* Sidebar for The Ranch sub-pages */
+.sidebar ul {
+    list-style-type: none;
+    float: left;
+    width: 160px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    background-color: rgba(1, 50, 32, 0.8);
+}
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.sidebar ul li a:hover {
+    color: #f89900;
+    background-color: rgba(7, 117, 77, 0.8);
+}
+
+/*Contact page*/
+#contact  {
+    color: rgb(245, 245, 245);
+    text-align: center;
+    font-size: larger;
+    font-family: 'Merriweather', serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+#contact p a {
+    color:rgb(1, 50, 32);
+    text-decoration: none;
+    font-weight: 600;
+}
+#contact p a:hover {
+    color: #f89900;
+}
+.card-container {
+    display:inline-block;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(1, 50, 32, 0.5);
+}
+.contact-cards {
+    display: block;
+    float: left;
+    width: 400px;
+    margin-top: 53.78px;
+    margin-bottom: 53.78px;
+}
+.phone {
+    padding-bottom: 20px;
+    font-size: medium;
+}
+.fax {
+    padding-bottom: 20px;
+    font-size: medium;
+}
+.email {
+    padding-bottom: 20px;
+    font-size: medium;
+}
+#contact-image {
+    display: inline-block;
+    width: 705px;
+    height: 470px;
+    border: 1px solid #fff ;
+}
+
+/*Wildlife page*/
+.tiles {
+    color: rgb(245, 245, 245);
+}
+.tiles h2 {
+    margin-left: 170px;
+    font-size: x-large;
+    font-family: 'Merriweather', serif;
+}
+.tiles p {
+    display: block;
+    margin-left: 170px;
+    font-size: larger;
+    font-family: 'Merriweather', serif;
+    width: 50%;
+}
+.image-gallery {
+    margin: auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-gallery figure {
+    width: 341px;
+    height: 275px;
+    background-color: rgba(1, 50, 32, 0.8);
+    padding: 10px;
+    margin: 20px;
+}
+.image-gallery figcaption {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+/*The Ranch page*/
+.about-ranch {
+    color: rgb(245, 245, 245);
+    font-family: 'Merriweather', serif;
+    font-size: large;
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0px 10px 0px 10px;
+}
+.about-ranch sup {
+    font-size: x-small;
+}
+
+/* #lodge-image-container {
+    display: block;
+    float: left;
+    padding: 10px;
+    
+} */
+/* #lodge-image-container img {
+    width: 100%;
+    height: auto;
+} */
